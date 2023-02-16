@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>CarX</title>
+		<script type="module" crossorigin defer src="./assets/app.js"></script>
+		<link rel="stylesheet" href="./assets/styles.css">
+	</head>
+	<body class="snap-both">
+		<div
+			class="Model-3 h-screen bg-[url(Images/bg.jpg)] bg-cover bg-center bg-no-repeat"
+		>
+			<header>
+				<nav class="flex p-8 items-center justify-between">
+					<div class="logo-wrapper font-Lobster-Two text-4xl">
+						CarX
+					</div>
+
+					<button
+						class="menu py-2 px-6 font-semibold bg-slate-300 xl:hidden hover:cursor-pointer"
+						id="model-3"
+					>
+						Menu
+					</button>
+					<div class="mobile-menu md:hidden absolute transition-all duration-1000 ease-in-out top-1 right-0 w-2/3 bg-white hidden" id="model-3-menu">
+						<div class="cross relative left-3/4 p-6">
+							<button class="bg-white text-gray-800 font-bold py-2 px-4">
+								<svg class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+								  <path fill-rule="evenodd" d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 011.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+								</svg>
+							  </button>							  
+						</div>
+						<ul class="flex flex-col p-8 gap-6">
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model S</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model 3</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model X</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model Y</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Solar Panels</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Solar Roofs</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Accessories</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Charging</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Find Us</a></li>
+						</ul>
+					</div>
+
+					<ul class="gap-6 model-display hidden xl:flex">
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model S
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model 3
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model X
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model Y
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Solar Roof
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Solar Panels
+						</li>
+					</ul>
+
+					<ul class="gap-6 hidden xl:flex">
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Shop
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Account
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Menu
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<div class="text-center space-y-3 my-4">
+					<h1
+						class="text-6xl font-semibold transition-colors duration-300 ease-in-out hover:text-red-600 hover:cursor-pointer"
+					>
+						Model 3
+					</h1>
+					<h6 class="text-2xl">Leasing starts at $349/mp</h6>
+				</div>
+
+				<div
+					class="flex buttons gap-5 flex-col relative top-[55vh] justify-center mx-auto"
+				>
+					<div
+						class="buttons-wrapper flex flex-col w-2/3 md:flex-row text-center gap-5 mx-auto justify-center"
+					>
+						<a
+							class="py-2 transition-all duration-500 ease-in-out rounded-lg px-24 bg-slate-800 text-white hover:bg-transparent hover:text-black hover:border-2 hover:border-slate-800"
+							target="_blank"
+							href="https://www.tesla.com/model3/design#overview"
+							>Custom Order</a
+						>
+						<a
+							class="py-2 transition-all duration-500 ease-in-out rounded-lg px-24 bg-slate-300 hover:bg-transparent hover:text-black hover:border-2 hover:border-slate-300"
+							target="_blank"
+							href="https://www.tesla.com/drive"
+							>Demo Drive</a
+						>
+					</div>
+
+					<div class="svg-wrapper mx-auto">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 animate-bounce hover:cursor-pointer"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+							/>
+						</svg>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div
+			class="Model-S h-screen bg-[url(Images/Homepage-Model-S-Desktop-LHD.jpg)] bg-cover bg-center bg-no-repeat"
+		>
+			<header>
+				<nav class="flex p-8 items-center justify-between">
+					<div class="logo-wrapper font-Lobster-Two text-4xl">
+						CarX
+					</div>
+
+					<button
+						class="menu py-2 px-6 font-semibold bg-slate-300 xl:hidden hover:cursor-pointer"
+						id="model-s"
+					>
+						Menu
+					</button>
+
+					<div class="mobile-menu md:hidden absolute transition-all duration-1000 ease-in-out top-[100dvh] right-0 w-2/3 bg-white hidden" id="model-s-menu">
+						<div class="cross relative left-3/4 p-6">
+							<button class="bg-white text-gray-800 font-bold py-2 px-4">
+								<svg class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+								  <path fill-rule="evenodd" d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 011.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+								</svg>
+							  </button>							  
+						</div>
+						<ul class="flex flex-col p-8 gap-6">
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model S</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model 3</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model X</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Model Y</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Solar Panels</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Solar Roofs</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Accessories</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Charging</a></li>
+							<li class="hover:bg-slate-100 py-2 px-4"><a href="#">Find Us</a></li>
+						</ul>
+					</div>
+
+					<ul class="gap-6 model-display hidden xl:flex">
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model S
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model 3
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model X
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Model Y
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Solar Roof
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Solar Panels
+						</li>
+					</ul>
+
+					<ul class="gap-6 hidden xl:flex">
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Shop
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Account
+						</li>
+						<li
+							class="transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-slate-200 p-2"
+						>
+							Menu
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<div class="text-center space-y-3 my-4">
+					<h1
+						class="text-6xl font-semibold transition-colors duration-300 ease-in-out hover:text-red-600 hover:cursor-pointer"
+					>
+						Model S
+					</h1>
+					<h6 class="">Schedule a demo drive</h6>
+				</div>
+
+				<div
+					class="flex buttons gap-5 relative mx-auto top-[58vh] justify-center flex-col"
+				>
+					<div
+						class="buttons-wrapper flex flex-col md:flex-row text-center gap-5 mx-auto"
+					>
+						<a
+							class="py-2 transition-all duration-500 ease-in-out rounded-lg px-24 bg-slate-800 text-white hover:bg-transparent hover:text-black hover:border-2 hover:border-slate-800"
+							target="_blank"
+							href="https://www.tesla.com/model3/design#overview"
+							>Custom Order</a
+						>
+						<a
+							class="py-2 transition-all duration-500 ease-in-out rounded-lg px-24 bg-slate-300 hover:bg-transparent hover:text-black hover:border-2 hover:border-slate-300"
+							target="_blank"
+							href="https://www.tesla.com/drive"
+							>Demo Drive</a
+						>
+					</div>
+
+					<div class="svg-wrapper mx-auto">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 animate-bounce hover:cursor-pointer"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+							/>
+						</svg>
+					</div>
+				</div>
+			</main>
+		</div>
+		<div
+			class="Accescores h-screen bg-[url(Images/handfrees.jpg)] bg-cover bg-center bg-no-repeat"
+		>
+			<main>
+				<div class="text-center space-y-3 my-4">
+					<h1
+						class="text-6xl font-semibold transition-colors duration-300 ease-in-out hover:cursor-pointer p-24"
+					>
+						Accessories
+					</h1>
+				</div>
+
+				<div
+					class="flex buttons gap-5 relative w-1/2 mx-auto top-[50vh] justify-center flex-col"
+				>
+					<div
+						class="buttons-wrapper flex-col md:flex-row text-center gap-5"
+					>
+						<a
+							class="py-2 transition-all duration-500 ease-in-out rounded-lg px-24 bg-slate-800 text-white hover:bg-transparent hover:text-black hover:border-2 hover:border-slate-800"
+							target="_blank"
+							href="https://www.tesla.com/model3/design#overview"
+							>Custom Order</a
+						>
+					</div>
+				</div>
+			</main>
+
+			<footer
+				class="flex text-slate-600 gap-3 font-semibold text-sm justify-center relative top-[55vh]"
+			>
+				<p>CarX Copyright @ 2023</p>
+				<p>Privacy & legal</p>
+				<p>Vehicle Recalls</p>
+				<p>Contact</p>
+				<p>Career</p>
+				<p>News</p>
+				<p>Engage</p>
+				<p>location</p>
+			</footer>
+		</div>
+	</body>
+
+	
+</html>
